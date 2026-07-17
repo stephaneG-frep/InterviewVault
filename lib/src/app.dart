@@ -169,6 +169,8 @@ class _AppShellState extends State<AppShell> {
           : NavigationBar(
               selectedIndex: index,
               onDestinationSelected: (v) => setState(() => index = v),
+              labelBehavior:
+                  NavigationDestinationLabelBehavior.onlyShowSelected,
               destinations: destinations,
             ),
       floatingActionButton: index == 1
